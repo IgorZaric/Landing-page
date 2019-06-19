@@ -1,0 +1,53 @@
+.hero {
+  max-width: 128rem;
+  min-height: 85rem;
+  margin: 0 auto;
+  background-image: url("../img/hero-bg.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+
+  &__content {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.4rem;
+  }
+
+  &__btn {
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+
+    &-primary {
+      background-color: $color-primary;
+    }
+
+    &-secondary {
+      background-color: rgba($color: $color-primary, $alpha: 0.2);
+      margin-left: 1rem;
+      border: 2px solid #fff;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 2px 2px 2px #fff;
+    }
+    &:active {
+      transform: translateY(3px);
+      box-shadow: 0 0 0 0 #fff;
+    }
+  }
+}

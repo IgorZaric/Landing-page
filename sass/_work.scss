@@ -1,0 +1,71 @@
+.work {
+  max-width: 128rem;
+  margin: 0 auto;
+  text-align: center;
+
+  &__heading {
+    color: $color-primary;
+  }
+
+  &__description {
+    text-align: left;
+    width: 26rem;
+
+    &-text {
+      line-height: 1.7;
+    }
+  }
+
+  &__items {
+    padding: 5rem 5rem 6.5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4.6rem;
+
+    @media only screen and (max-width: 550px) {
+      justify-items: center;
+    }
+  }
+
+  &__item {
+    background-image: url("../img/work.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 26rem;
+    height: 26rem;
+    cursor: pointer;
+
+    &:hover > div {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+
+  &__eye {
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  &__client {
+    background: rgba(#000, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    opacity: 0;
+  }
+}
+
+.client {
+  margin-left: 1.4rem;
+}
+
+.arrow {
+  margin-right: 1.3rem;
+}

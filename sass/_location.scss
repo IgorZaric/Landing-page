@@ -1,0 +1,19 @@
+.location {
+  max-width: 128rem;
+  height: 60rem;
+  margin: 0 auto;
+  background-image: url("../img/location@1X.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -6.5rem;
+  position: relative;
+  &__heading {
+    position: absolute;
+    top: 2rem;
+    left: 35%;
+    @media only screen and (max-width: 400px) {
+      left: 30%;
+    }
+  }
+}

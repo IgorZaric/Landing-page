@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 700px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+$navbar-color: #ff6835;
+$color-primary: #ff6633;
+$color-grey-light: #e6e6e6;
+$color-grey-dark: #999999;
