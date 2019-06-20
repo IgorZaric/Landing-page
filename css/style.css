@@ -16,6 +16,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     grid-gap: 4rem; }
+    @media only screen and (max-width: 400px) {
+      .about__content {
+        max-width: 300px;
+        margin: 0 auto; } }
   .about__container {
     transform: skewY(5deg); }
   .about__person {
